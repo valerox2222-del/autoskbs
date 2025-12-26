@@ -5,9 +5,9 @@ $page_keywords = "blog coches españoles, coches europeos, Seat, Renault, Peugeo
 $page_canonical = "https://autoskbs.com/blog.php";
 $custom_styles = "html { scroll-behavior: smooth; }";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <main class="flex-1 flex flex-col">
@@ -120,7 +120,7 @@ foreach ($articulos as $articulo): ?>
 </main>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

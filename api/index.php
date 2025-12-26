@@ -76,7 +76,7 @@ $structured_data = [
 ];
 
 // Incluir header
-include 'templates/_header.php';
+include '../templates/_header.php';
 ?>
 
 <!-- WhatsApp Floating Button -->
@@ -87,7 +87,7 @@ include 'templates/_header.php';
     <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Contactar por WhatsApp</span>
 </a>
 
-<?php include 'templates/_menu.php'; ?>
+<?php include '../templates/_menu.php'; ?>
 
 <!-- Hero Section -->
 <section class="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-white pt-16 pb-20 lg:pt-24 lg:pb-28 animate-fade-in-up" aria-labelledby="hero-heading">
@@ -356,7 +356,7 @@ include 'templates/_header.php';
 </section>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

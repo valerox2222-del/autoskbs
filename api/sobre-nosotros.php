@@ -5,9 +5,9 @@ $page_keywords = "sobre AutoSKBS, historia taller chapa pintura, taller Barcelon
 $page_canonical = "https://autoskbs.com/sobre-nosotros.php";
 $custom_styles = "";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <div class="layout-container flex h-full grow flex-col">
@@ -152,7 +152,7 @@ include 'templates/_menu.php';
 </div>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

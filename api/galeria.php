@@ -5,9 +5,9 @@ $page_keywords = "galería trabajos chapa pintura, restauraciones coches Barcelo
 $page_canonical = "https://autoskbs.com/galeria.php";
 $custom_styles = "";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <main class="flex-1 flex flex-col">
@@ -104,7 +104,7 @@ foreach ($proyectos as $proyecto): ?>
 </main>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

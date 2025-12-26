@@ -5,9 +5,9 @@ $page_keywords = "política cookies AutoSKBS, cookies sitio web, gestión cookie
 $page_canonical = "https://autoskbs.com/politica-cookies.php";
 $custom_styles = "";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -102,7 +102,7 @@ include 'templates/_menu.php';
 </main>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

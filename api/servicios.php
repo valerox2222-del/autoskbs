@@ -7,9 +7,9 @@ $page_canonical = "https://autoskbs.com/servicios.php";
 $custom_styles = "body { font-family: 'Inter', sans-serif; } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }";
 
 // Incluir header
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <!-- Hero Section -->
@@ -134,7 +134,7 @@ include 'templates/_menu.php';
 </section>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

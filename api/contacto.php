@@ -5,9 +5,9 @@ $page_keywords = "contacto taller chapa pintura Barcelona, taller Sant Joan Desp
 $page_canonical = "https://autoskbs.com/contacto.php";
 $custom_styles = "body { font-family: 'Inter', sans-serif; } .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <main class="flex-grow flex flex-col items-center w-full py-8 md:py-12 px-4 sm:px-10">
@@ -149,7 +149,7 @@ include 'templates/_menu.php';
 </main>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 

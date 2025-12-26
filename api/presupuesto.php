@@ -5,9 +5,9 @@ $page_keywords = "presupuesto chapa pintura, presupuesto gratuito taller, solici
 $page_canonical = "https://autoskbs.com/presupuesto.php";
 $custom_styles = "";
 
-include 'templates/_header.php';
-include 'templates/_whatsapp_button.php';
-include 'templates/_menu.php';
+include '../templates/_header.php';
+include '../templates/_whatsapp_button.php';
+include '../templates/_menu.php';
 ?>
 
 <main class="flex flex-col items-center justify-center min-h-screen py-10 px-4 sm:px-10">
@@ -93,7 +93,7 @@ include 'templates/_menu.php';
 </main>
 
 <?php 
-include 'templates/_footer.php';
-include 'templates/_scripts_footer.php';
+include '../templates/_footer.php';
+include '../templates/_scripts_footer.php';
 ?>
 
