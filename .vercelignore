@@ -1,0 +1,11 @@
+# Archivos y carpetas a ignorar en Vercel
+node_modules/
+.git/
+.vscode/
+*.log
+.DS_Store
+bat/
+functions/
+*.md
+README.md
+

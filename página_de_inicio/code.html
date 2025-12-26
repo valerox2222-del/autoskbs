@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Taller Premium - Chapa y Pintura</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-[#101922]/90 backdrop-blur-md border-b border-solid border-[#f0f2f4] dark:border-gray-800">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 md:px-10 py-3 flex items-center justify-between">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-3xl">directions_car</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Taller Premium</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-9">
+<a class="text-[#111418] dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#services">Servicios</a>
+<a class="text-[#111418] dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#portfolio">Portafolio</a>
+<a class="text-[#111418] dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#reviews">Testimonios</a>
+<a class="text-[#111418] dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contacto</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Pedir Cita</span>
+</button>
+</div>
+<!-- Mobile Menu Icon (Placeholder functionality) -->
+<button class="md:hidden text-[#111418] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full">
+<div class="w-full px-0">
+<div class="relative flex min-h-[600px] w-full flex-col justify-center items-start bg-cover bg-center bg-no-repeat px-4 py-20 md:px-20 lg:px-40" data-alt="shiny luxury blue car in a modern clean workshop garage" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKD8N7-fZD2nMGNWKyDvjLzSxcSaJEjaVNyy0gnb8R3xyhPiQBZCKbmzGl5Tee7fX1LAuFGQ2dgALBG6hwoBac8hZqSpQhzlsJyl4dy7sDMS8-E-w2juK-SYMTHspcqWpmKEUUL3DMd4hlymeXf_i2vOLNVybhGsBLDS0fGYw-tzTUUkd9MO240Esdek9qtaLC-4VINb8FFwBCRL-Tueku2-KbEAUCXLHCFVkImEkXrF84kjOhWJkwMWPkiL_1OOdA8aMaVR3A-pc");'>
+<div class="flex flex-col gap-6 text-left max-w-[800px] animate-fade-in-up">
+<div class="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Expertos en Chapa y Pintura</span>
+</div>
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
+                            Restauramos el brillo original de tu coche
+                        </h1>
+<h2 class="text-gray-200 text-lg md:text-xl font-normal leading-relaxed max-w-[600px]">
+                            Especialistas en acabados de alta calidad. Desde pequeños arañazos hasta restauraciones completas. Tu vehículo como nuevo, garantizado.
+                        </h2>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 text-white text-base font-bold transition-all shadow-lg hover:shadow-primary/50">
+                                Solicitar Presupuesto
+                            </button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-base font-bold transition-all">
+                                Ver Nuestros Trabajos
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges (New Component) -->
+<section class="bg-white dark:bg-[#101922] border-b border-gray-100 dark:border-gray-800">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 py-8 flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<span class="font-bold text-sm md:text-base">Garantía de por vida</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">timer</span>
+<span class="font-bold text-sm md:text-base">Entrega Puntual</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+<span class="font-bold text-sm md:text-base">Igualación de Color Exacta</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="font-bold text-sm md:text-base">Pinturas Ecológicas</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="w-full py-16 md:py-24 bg-background-light dark:bg-background-dark" id="services">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 md:px-10 flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-primary font-bold tracking-wider uppercase text-sm">Nuestros Servicios</h2>
+<h1 class="text-[#111418] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] max-w-[720px]">
+                            Soluciones integrales para tu automóvil
+                        </h1>
+<p class="text-[#617589] dark:text-gray-400 text-base md:text-lg font-normal leading-normal max-w-[720px]">
+                            Utilizamos tecnología de punta y materiales premium para asegurar que cada reparación supere tus expectativas.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] p-6 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">build</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold">Chapa y Reparación</h3>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">
+                                    Reparación de abolladuras, golpes estructurales y enderezado de chasis con precisión milimétrica.
+                                </p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] p-6 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">format_paint</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold">Pintura al Horno</h3>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">
+                                    Acabados de fábrica en nuestra cabina presurizada libre de polvo. Igualación de color digital.
+                                </p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] p-6 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">lightbulb</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold">Pulido de Faros</h3>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">
+                                    Restauración de transparencia y brillo para mejorar la estética y tu seguridad nocturna.
+                                </p>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] p-6 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">minor_crash</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold">Coche de Sustitución</h3>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">
+                                    Servicio de movilidad gratuito para que no pares tu vida mientras cuidamos de tu coche.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio / Image Grid Section -->
+<section class="w-full py-16 bg-white dark:bg-[#101922]" id="portfolio">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 md:px-10 flex flex-col gap-10">
+<div class="flex flex-col md:flex-row justify-between items-end gap-4">
+<div class="flex flex-col gap-2">
+<h2 class="text-[#111418] dark:text-white text-3xl font-bold">Galería de Trabajos</h2>
+<p class="text-[#617589] dark:text-gray-400 text-base">Resultados reales que hablan por sí mismos.</p>
+</div>
+<a class="text-primary font-medium hover:underline flex items-center gap-1" href="#">
+                            Ver todo el portafolio <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Portfolio Item 1 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="shiny red sports car hood after polishing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBq6bhfOLgAwHreoOYPThAf36oDwY7iCig-PjWtfte2bfMMQc79XByF7xNfxYjwz6O_l0aHIeW4e-0OHARnsPlLcoUxTRj064gfOjOyMnxNWoX7HKvnFdAVKFnBjg5ng9MmZHqNiFg06IDndzyThqd2TpVNn_Yh6oZGGE7SDpJqOX1pVE3jbVqRwyTlBxqutQYAiSlFs3KodmtgM2xd3unG1gJsVjXSzrmSid6ufhmcy5MQHJPUv-Al8LktswZhPj2ZmC2aawx_KL8");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+<span class="text-primary text-xs font-bold uppercase tracking-wider mb-2 block">Restauración</span>
+<h3 class="text-white text-xl font-bold leading-tight mb-2">Pintura Completa Ferrari Red</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                                        Proceso de decapado completo y aplicación de 3 capas de barniz cerámico.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="mechanic painting a car door in a booth" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgTj-AEAy3Gx6-995lQF85-JOchUlkWkcz2YqILc4vSdorjr-XVV0irAwKAj_EKD9dcVy1lp4R7orI6vnqerg36cUqf4acMQVPC2IZCEa3KvJJn-VC6NxPels_VdUYibGB0eDiALg8YSh_3FtAqlQomtchPh3FE9Zw15r2oYDSx5RBGdoXTWrA6LtKEVEX4vwuxRmuyzTxvvuqDfejQ_8FIVVdL7xDkZp2pxXILvnw_-P0NwazDX4A9gN6egIrhAVmVekZCJ35W2A");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+<span class="text-primary text-xs font-bold uppercase tracking-wider mb-2 block">Proceso</span>
+<h3 class="text-white text-xl font-bold leading-tight mb-2">Cabina de Pintura</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                                        Aplicación controlada para un acabado libre de impurezas.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Portfolio Item 3 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="close up of a polished black car headlight" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBexR8a7zuUc3VQr9473p1xaHTuBEtcsBEqjian6AlmVdp10g3BLLj1UCT0qNkeePTaoMpdzMgz7s2eIQebODRMsfGLphn22ENu919iKNgv-UDLTALL88CJTMFdinMNY6TwXBW5fKgU-4e_FN1jp8uQjiVIAU1cGGpm_BFbKBwUzEG2Mc4PJLrv-3yC94B7mquMM_MAJel3-9yAp-u8NPFFOsc3Ohww5tFBXytILxKXF6RTFOizc9IRmi4_aXwJ0d1WgoL9f2G8Q_A");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+<span class="text-primary text-xs font-bold uppercase tracking-wider mb-2 block">Detallado</span>
+<h3 class="text-white text-xl font-bold leading-tight mb-2">Pulido de Ópticas</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                                        Devolviendo la claridad y seguridad a los faros delanteros.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="w-full py-16 bg-background-light dark:bg-background-dark" id="reviews">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 md:px-10">
+<div class="flex flex-col gap-10">
+<div class="text-center max-w-2xl mx-auto mb-4">
+<h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-3">Lo que dicen nuestros clientes</h2>
+<p class="text-[#617589] dark:text-gray-400">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-[#1a2632] p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="portrait of a smiling man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDk3bUxr_fxSL0DOmWYcX-vwaGvbn9o6Lt6RaOTc4x1oj2C-T4Ge19nrZk6LX81wC_aqdKtaq4YTj8grBbKuSBQKQLrCNq5x9Bz0MK4gQTXa2Sc7IOJSh_0jxXVfX3xCc3YRUctsNvKcVDJnzbCXYwygvCUCKtfTuOXcuc3Bo3lhNqCqbb4AvO0ZtoxY1GZD3ow1EYh8Nak8XRBzDwVO2sLU0vNFefyJtzsv3K42MEcHGWx5FZ-GxXtWE9PK2031bH-xSVMXFYURCc");'>
+</div>
+<div class="flex-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal">Carlos Méndez</p>
+<p class="text-[#617589] dark:text-gray-400 text-xs font-normal">Reparación de Golpe</p>
+</div>
+<span class="text-xs text-[#617589] dark:text-gray-500">Hace 2 días</span>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="text-[#111418] dark:text-gray-300 text-sm leading-relaxed">
+                                    "Increíble trabajo, el coche quedó como si acabara de salir del concesionario. El trato fue excelente y cumplieron con los plazos prometidos. Muy recomendados."
+                                </p>
+</div>
+<!-- Review 2 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-[#1a2632] p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="portrait of a woman" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChlcu7QLNsXLTwhbPHzj2QInr6vjflKr6XsS4hYJkwGGj_vqILl-kYpfYl7VEe_34smxZE1PN3E0KF3hcVr22YgjakSffmq9u6RZ2I5mlMEhzjW9KTHIGMwq_-zRjmu-XiqoN0sne2qdrYGMkIECimMM8AHJgTCTHhFO7MDMpR-_gPiJ2SGfFkyYylNkNG6-3PzOEMx2Ok7j9DxbPdg4JQer-Tle7zngj1uLhIFYIBCdr1iZItRvbvYSUQJMuyiGkbb3VRKnhAPXg");'>
+</div>
+<div class="flex-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal">Ana García</p>
+<p class="text-[#617589] dark:text-gray-400 text-xs font-normal">Pintura Completa</p>
+</div>
+<span class="text-xs text-[#617589] dark:text-gray-500">Hace 1 semana</span>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="text-[#111418] dark:text-gray-300 text-sm leading-relaxed">
+                                    "Rapidez y profesionalidad. Me arreglaron un golpe en la puerta y pintaron el parachoques. No se nota ninguna diferencia de color. ¡Perfecto!"
+                                </p>
+</div>
+<!-- Review 3 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-[#1a2632] p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="portrait of a man with glasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEWEWWmIf9AF1dGcaR94kya0Cuc929v4YRuPTSdx1Wvl7t320aAZ4iKXzyLlHjihn217ge1wiVAsGD_t6j__JmuRfPUSk_uFpcju6Y7rlMOf6RFc0uPBfYHR_u_rH6S1Q-Zko3W0sOgF3t6Vr_E48Uh0QUkp15qxQs3jzxXZ1VTsc-8hx0x4yT2KGRnGjy6c02CBkNkyuQWdohX5bXZfKYwQ39Vm2IIrdHkZKPWFekojOjhQP1IGYMSdNcefKaSjbpHB0SdKwsBn4");'>
+</div>
+<div class="flex-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal">Luis Pérez</p>
+<p class="text-[#617589] dark:text-gray-400 text-xs font-normal">Pulido de Faros</p>
+</div>
+<span class="text-xs text-[#617589] dark:text-gray-500">Hace 3 semanas</span>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">star</span>
+</div>
+<p class="text-[#111418] dark:text-gray-300 text-sm leading-relaxed">
+                                    "Buen servicio y trato amable. El precio fue muy justo para la calidad del trabajo realizado en mis faros. Volveré sin duda."
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA & Map Section -->
+<section class="w-full py-0" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
+<div class="flex flex-col justify-center p-10 md:p-20 bg-primary text-white">
+<h2 class="text-3xl md:text-4xl font-black mb-6">¿Listo para renovar tu vehículo?</h2>
+<p class="text-blue-100 text-lg mb-8 max-w-md">
+                        Agenda tu cita hoy mismo o solicita un presupuesto sin compromiso. Nos pondremos en contacto contigo en menos de 24 horas.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="bg-white/20 p-2 rounded-full">
+<span class="material-symbols-outlined">phone</span>
+</div>
+<div>
+<p class="text-sm text-blue-100 uppercase font-bold tracking-wider">Llámanos</p>
+<p class="text-xl font-bold">+34 912 345 678</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-white/20 p-2 rounded-full">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-sm text-blue-100 uppercase font-bold tracking-wider">Visítanos</p>
+<p class="text-lg">Calle Industrial 45, Madrid</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-white/20 p-2 rounded-full">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<p class="text-sm text-blue-100 uppercase font-bold tracking-wider">Horario</p>
+<p class="text-lg">Lun - Vie: 08:00 - 19:00</p>
+</div>
+</div>
+</div>
+<button class="mt-10 w-fit bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                        Pedir Cita Online
+                    </button>
+</div>
+<div class="h-[400px] lg:h-auto bg-gray-200 relative">
+<!-- Placeholder for Map -->
+<div class="absolute inset-0 bg-cover bg-center grayscale" data-alt="map location of the workshop" data-location="Madrid" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPeNz83hfX8a0BZwgB2-iFRO1QS2ySV58p-DbRj0v0LcQwewe5F--EuuyBHgbyVhaYvevtlVUGe58Q1-cPBf9qV91mq6QGsGOCaN9hDcibfA-u8ZlraaoCdUXvW6AoFj1uPZwjqVmieUk6eDA3vGSr46CV3IgL5jDSxHYoeq0qCB22C6xNW9GcjtHqivIhO0xj7algsoj0-R5LHbgok3XBL778FbptrETolYPSjYLWe9dQN4XObIsu5rMeEX57u4Kz2QqSe8h5R74");'>
+</div>
+<!-- Map Pin Simulation -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-primary text-6xl drop-shadow-xl animate-bounce">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#0b1218] border-t border-[#f0f2f4] dark:border-gray-800 py-12 px-4 md:px-10">
+<div class="layout-container flex flex-col items-center justify-center w-full max-w-[1280px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between w-full gap-8">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-[#111418] dark:text-white">
+<span class="material-symbols-outlined text-primary text-2xl">directions_car</span>
+<h2 class="text-lg font-bold">Taller Premium</h2>
+</div>
+<p class="text-sm text-[#617589] dark:text-gray-400">
+                            Calidad, garantía y pasión por los automóviles. Tu taller de confianza desde 2010.
+                        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3">
+<h3 class="text-sm font-bold text-[#111418] dark:text-white uppercase">Servicios</h3>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Chapa y Pintura</a>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Pulido</a>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Restauración</a>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-sm font-bold text-[#111418] dark:text-white uppercase">Empresa</h3>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Sobre Nosotros</a>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Portafolio</a>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Contacto</a>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="text-sm font-bold text-[#111418] dark:text-white uppercase">Legal</h3>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Privacidad</a>
+<a class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary" href="#">Términos</a>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-[#f0f2f4] dark:bg-gray-800 my-8"></div>
+<div class="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+<p class="text-xs text-[#617589] dark:text-gray-500">© 2023 Taller Premium. Todos los derechos reservados.</p>
+<div class="flex gap-4">
+<!-- Social Icons Placeholders -->
+<a class="text-[#617589] dark:text-gray-500 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-[#617589] dark:text-gray-500 hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="text-[#617589] dark:text-gray-500 hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

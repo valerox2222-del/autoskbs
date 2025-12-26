@@ -1,0 +1,23 @@
+# Vercel
+.vercel
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*.bak
+*~
+
+# Node (si usas npm para Vercel CLI)
+node_modules/
+package-lock.json
+
